@@ -48,6 +48,9 @@ switch (enterNumber) {
 //------------task3-------------//
 let numberFirst = +prompt("Enter first number", "");
 let numberSecond = +prompt("Enter second number", "");
+if (numberFirst > numberSecond) {
+   [numberFirst, numberSecond] = [numberSecond, numberFirst];
+}
 let sumNumbersFirst = (numberFirst * (numberFirst - 1)) / 2;
 let sumNumbersSecond = (numberSecond * (numberSecond + 1)) / 2;
 let sumNumbers = sumNumbersSecond - sumNumbersFirst;
@@ -55,7 +58,9 @@ alert(sumNumbers);
 
 let number_1 = +prompt("Enter first number", "");
 let number_2 = +prompt("Enter second number", "");
-
+if (number_1 > number_2) {
+   [number_1, number_2] = [number_2, number_1];
+}
 let sum = 0;
 do {
    sum += number_1;
