@@ -72,3 +72,11 @@ if (
 ) {
    alert("Yes it is a palindrome");
 } else alert("No, it's not a palindrome");
+
+//------------multiplication tables ---------//
+
+for (let i = 1; i < 11; i++) {
+   for (let j = 1; j < 11; j++) {
+      console.log(`${i} * ${j} = ${i * j}`);
+   }
+}
