@@ -65,7 +65,7 @@ do {
 alert(sum);
 
 //--------palindrom --------------//
-let enterNumberCheckPalindrom = prompt("Enter the number");
+let enterNumberCheckPalindrom = prompt("Enter the number check palindrom");
 if (
    enterNumberCheckPalindrom.split("").reverse().join("") ===
    enterNumberCheckPalindrom
