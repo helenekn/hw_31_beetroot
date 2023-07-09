@@ -9,6 +9,9 @@ html {
    font-style: italic;
    background: linear-gradient(#a4e7de, #04322c);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 18px;
+   color: #434746;
+   font-weight: 600;
 }
 
 .header,
@@ -26,4 +29,34 @@ html {
 
 .section {
    margin: 50px;
+   &__title {
+      margin-bottom: 30px;
+      text-align: center;
+   }
+   &__button {
+      display: block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #434746;
+      color: #ffffff;
+      font-style: italic;
+      font-size: 18px;
+      width: 300px;
+      margin: 0 auto;
+   }
+   &__answer {
+      p {
+         margin-bottom: 10px;
+      }
+      text-align: center;
+      margin: 20px;
+      img {
+         border-radius: 15px;
+         margin: 20px;
+      }
+   }
+}
+
+.hidden {
+   display: none;
 }
