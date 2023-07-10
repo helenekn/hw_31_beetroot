@@ -8,8 +8,8 @@ body,
 html {
   min-height: 100vh;
   font-style: italic;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a4e7de), to(#04322c));
-  background: linear-gradient(#a4e7de, #04322c);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a4e7de), to(#255d56));
+  background: linear-gradient(#a4e7de, #255d56);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   color: #434746;
@@ -17,44 +17,75 @@ html {
 }
 
 .header,
-.section {
-  padding: 0 calc(50vw - 400px);
+.main {
+  padding: 0 calc(50vw - 600px);
 }
 
 .header__title {
-  margin-top: 30px;
+  margin: 40px;
   font-weight: normal;
   text-align: center;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .section {
-  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 550px;
+  height: 360px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 0.2px outset #04322c;
+  border-radius: 15px;
 }
 .section__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
+  font-size: 18px;
 }
 .section__button {
-  display: block;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #434746;
   color: #ffffff;
   font-style: italic;
   font-size: 18px;
-  width: 300px;
-  margin: 0 auto;
+  width: 350px;
 }
 .section__answer {
   text-align: center;
-  margin: 20px;
 }
 .section__answer p {
   margin-bottom: 10px;
 }
+.section__answer p:first-of-type {
+  margin-top: 40px;
+}
 .section__answer img {
   border-radius: 15px;
-  margin: 20px;
+  margin-top: 20px;
+  width: 350px;
 }
 
 .hidden {
