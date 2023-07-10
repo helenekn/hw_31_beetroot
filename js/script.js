@@ -23,13 +23,13 @@ function outputAnswer() {
 btn[1].addEventListener("click", numberOfArgumen);
 
 function numberOfArgumen() {
-   answer[1].innerHTML = "<img src='../assets/img/task2.png'>";
+   answer[1].innerHTML = "<img src='assets/img/task2.png'>";
 }
 
 btn[2].addEventListener("click", compareNumber);
 
 function compareNumber() {
-   answer[2].innerHTML = "<img src='../assets/img/task3.png'>";
+   answer[2].innerHTML = "<img src='assets/img/task3.png'>";
 }
 
 //------task 2-------------//
@@ -62,3 +62,11 @@ function factorial(n) {
 console.log(factorial(3));
 
 //---------task 5----------//
+
+function connectNumber(x, y, z) {
+   return +[x, y, z].join("");
+}
+
+console.log(connectNumber(1, 4, 5));
+
+//----------task 6------------//
