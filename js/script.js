@@ -4,7 +4,7 @@
 let btn = document.querySelectorAll(".button");
 let answer = document.querySelectorAll(".answer");
 
-btn[0].addEventListener("click", outputAnswer);
+btn[0].addEventListener("click", outputAnswer, { once: true });
 
 function outputAnswer() {
    let kindOfFunction = [
@@ -64,7 +64,11 @@ function findFactorial(n) {
       return 1;
    } else return n * findFactorial(n - 1);
 }
-console.log(factorial(3));
+
+function findFactorial_1(n) {
+   return n ? n * findFactorial_1(n - 1) : 1;
+}
+console.log(findFactorial_1(3));
 
 //---------task 5----------//
 
