@@ -23,13 +23,13 @@ function outputAnswer() {
 btn[1].addEventListener("click", numberOfArgumen);
 
 function numberOfArgumen() {
-   answer[1].innerHTML = "<img src='../assets/img/task_2.png'>";
+   answer[1].innerHTML = "<img src='../assets/img/task2.png'>";
 }
 
 btn[2].addEventListener("click", compareNumber);
 
 function compareNumber() {
-   answer[2].innerHTML = "<img src='../assets/img/task_3.png'>";
+   answer[2].innerHTML = "<img src='../assets/img/task3.png'>";
 }
 
 //------task 2-------------//
